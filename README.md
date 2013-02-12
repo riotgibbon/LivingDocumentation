@@ -54,6 +54,8 @@ The results will be written to Target Process
 
 
 Sample Story
+============
+```java
 Basic maths
 
 Meta:
@@ -107,7 +109,47 @@ Then I should get <sum>
 Examples:
 |n1|n2|sum|
 |30|10|40|
+```
 
 
+Sample Result in Target Process
+===============================
 
+<pre>
 
+As a counter, in order to know maths I wish to add and subtract
+
+Scenarios:3
+(1) Subtraction: passed
+Given I enter <n1>
+And I enter <n2>
+When I add
+Then I should get <sum>
+
+examples:
+|n1|n2|sum| |30|-20|10| |30|-5|25|
+
+Tue Feb 12 12:58:52 GMT 2013
+
+(2) BigNumbers: failed: Sum should be 10 expected:<10> but was:<80000>
+Given I enter <n1>
+And I enter <n2>
+When I add
+Then I should get <sum>
+
+examples:
+|n1|n2|sum| |30000|50000|10|
+
+Tue Feb 12 13:00:13 GMT 2013
+
+(3) Addition: passed
+Given I enter <n1>
+And I enter <n2>
+When I add
+Then I should get <sum>
+
+examples:
+|n1|n2|sum| |30|10|40|
+
+Tue Feb 12 13:00:34 GMT 2013
+</pre>
