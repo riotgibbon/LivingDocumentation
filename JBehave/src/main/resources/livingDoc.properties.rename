@@ -1,0 +1,4 @@
+#enter your Target Process details below
+host = http://yourTPHost.tpondemand.com/api/v1/
+user = TPusername
+password = TPPass
