@@ -34,3 +34,80 @@ Developers know if they're done
 QA focus on new, more cunning exploratory tests, with the routine work automated
 
 
+JBehave Solution
+================
+This is my first and only Java project, so it's not perfect
+
+Create a free Target Process account - http://www.targetprocess.com/pricing/
+
+Set up an account with developer priviliges
+
+Create a user story, and attach test cases
+
+Using the downloaded JBehave code as a model, annotate the JBehave stories with the matching id values from Target Process:
+
+Rename \src\main\resources\livingDoc.properties.rename to livingDoc.properties, and update with your Target Process url, username and password
+
+Run the stories!
+
+The results will be written to Target Process
+
+
+Sample Story
+Basic maths
+
+Meta:
+@UserStory 224
+
+Narrative: 
+In order to know maths
+As a counter
+I want to add and subtract
+
+Scenario:  Subtraction
+Meta:
+@TestCase 225
+
+Given I enter <n1>
+And I enter <n2>
+When I add
+Then I should get <sum>
+
+Examples:
+|n1|n2|sum|
+|30|-20|10|
+|30|-5|25|
+
+
+
+Scenario:  BigNumbers
+Meta:
+@TestCase 226
+
+Given I enter <n1>
+And I enter <n2>
+When I add
+Then I should get <sum>
+
+Examples:
+|n1|n2|sum|
+|30000|50000|10|
+
+
+
+Scenario:  Addition
+Meta:
+@TestCase 227
+
+Given I enter <n1>
+And I enter <n2>
+When I add
+Then I should get <sum>
+
+Examples:
+|n1|n2|sum|
+|30|10|40|
+
+
+
+
