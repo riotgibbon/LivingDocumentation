@@ -48,7 +48,7 @@ Using the downloaded JBehave code as a model, annotate the JBehave stories with 
 
 Rename \src\main\resources\livingDoc.properties.rename to livingDoc.properties, and update with your Target Process url, username and password
 
-Run the stories!
+Run the stories!  (make sure you have Firefox installed, and it's in the Path)
 
 The results will be written to Target Process
 
