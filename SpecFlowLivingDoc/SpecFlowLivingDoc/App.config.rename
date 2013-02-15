@@ -12,8 +12,8 @@
   </specFlow>
 
   <appSettings>
-    <add key="TargetProcessAPI" value="http://livingdoc.tpondemand.com/"/>
-    <add key="UserName" value="livingdocbot"/>
-    <add key="Password" value="livingdocbot"/>
+    <add key="TargetProcessAPI" value="http://target.tpondemand.com/"/>
+    <add key="UserName" value="UserName"/>
+    <add key="Password" value="Password"/>
   </appSettings>
 </configuration>
